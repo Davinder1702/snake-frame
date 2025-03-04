@@ -2,13 +2,13 @@
     "frame": {
       "version": "2",
       "name": "Uniframe",
-      "iconUrl": "https://snake-frame26.vercel.app/favicon.png",
-      "homeUrl": "https://snake-frame26.vercel.app/swap",
-      "imageUrl": "https://snake-frame26.vercel.app/favicon.png",
+      "iconUrl": "https://snake-frame55.vercel.app/favicon.png",
+      "homeUrl": "https://snake-frame55.vercel.app/swap",
+      "imageUrl": "https://snake-frame55.vercel.app/favicon.png",
       "buttonTitle": "Check this out",
-      "splashImageUrl": "https://snake-frame26.vercel.app/splash.png",
+      "splashImageUrl": "https://snake-frame55.vercel.app/splash.png",
       "splashBackgroundColor": "#eefcff",
-      "webhookUrl": "https://snake-frame26.vercel.app/api/webhook",
+      "webhookUrl": "https://snake-frame55.vercel.app/api/webhook",
       "image": "https://snake-frame12.vercel.app/favicon.png",
       "buttons": [
         {
