@@ -65,80 +65,18 @@ const Index = () => {
   
   return (
     <FarCasterGameProvider>
-    <div className="min-h-screen flex flex-col items-center justify-center p-4">
-      <motion.div
-        className="max-w-md w-full mx-auto"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="text-center mb-6">
-          <motion.h1 
-            className="text-3xl font-bold mb-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            Snake
-          </motion.h1>
-          <motion.p 
-            className="text-muted-foreground"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            Use arrow keys or touch controls to play
-          </motion.p>
-        </div>
-        
-        <ScoreBoard score={score} highScore={highScore} />
-        
-        <motion.div 
-          className="relative flex justify-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ 
-            delay: 0.4,
-            type: "spring",
-            stiffness: 300,
-            damping: 25
-          }}
-        >
-          <GameBoard
-            gridSize={gridSize}
-            cellSize={cellSize}
-            snake={snake}
-            food={food}
-            isPaused={isPaused}
-          />
-          
-          {gameState === 'READY' && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="glass-panel p-6 rounded-xl text-center">
-                <h2 className="text-xl font-semibold mb-4">Ready to Play?</h2>
-                <Button onClick={startGame} className="px-8">
-                  Start Game
-                </Button>
-              </div>
-            </div>
-          )}
-        </motion.div>
-        
-        <ControlPanel
-          onDirectionChange={changeDirection}
-          onTogglePause={togglePause}
-          isPaused={isPaused}
-          isPlaying={gameState === 'PLAYING'}
-        />
-      </motion.div>
-      
-      {gameState === 'GAME_OVER' && (
-        <GameOverModal
-          score={score}
-          highScore={highScore}
-          onRestart={startGame}
-        />
-      )}
+      <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
+      <iframe 
+        src="https://snakycat.io" 
+        style={{
+          width: '100%',
+          height: '100%',
+          border: 'none',
+          position: 'absolute',
+          top: 0,
+          left: 0
+        }}
+      />
     </div>
     </FarCasterGameProvider>
   );
