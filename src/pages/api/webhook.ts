@@ -6,17 +6,38 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    // Return a new frame state
+    const { untrustedData } = req.body;
+    
+    // Handle the button click
+    if (untrustedData?.buttonIndex === 1) {
+      return res.status(200).json({
+        frame: {
+          version: 'vNext',
+          image: 'https://snake-frame22.vercel.app/favicon.png',
+          buttons: [
+            {
+              label: 'Playing...',
+              action: 'post'
+            }
+          ],
+          post_url: 'https://snake-frame22.vercel.app/api/webhook',
+          redirect: 'https://snake-frame22.vercel.app'  // Redirect to your game
+        }
+      });
+    }
+
+    // Initial frame state
     return res.status(200).json({
       frame: {
         version: 'vNext',
-        image: 'https://snake-frame15.vercel.app/favicon.png',
+        image: 'https://snake-frame22.vercel.app/favicon.png',
         buttons: [
           {
-            label: 'Start Game'
+            label: 'Start Game',
+            action: 'post'
           }
         ],
-        post_url: 'https://snake-frame15.vercel.app/api/webhook'
+        post_url: 'https://snake-frame22.vercel.app/api/webhook'
       }
     });
   } catch (error) {
