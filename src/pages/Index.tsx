@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useSnakeGame } from '@/lib/useSnakeGame';
@@ -50,7 +49,13 @@ const Index = () => {
   function FarCasterGameProvider({children}:{children:React.ReactNode}) {
     useEffect(()=>{
       const load = async () => {
-        FrameSDK.actions.ready()
+        try {
+          FrameSDK.actions.ready();
+          // await frame.validate(); // Validate the frame
+          // await frame.ready(); // Signal frame is ready
+        } catch (error) {
+          console.error('Frame validation failed:', error);
+        }
       }
       load()
     },[])
