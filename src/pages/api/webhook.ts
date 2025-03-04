@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (untrustedData?.buttonIndex === 1) {
       return res.status(200).json({
         frame: {
-          version: 'vNext',
+          version: '2',
           image: 'https://snake-frame22.vercel.app/favicon.png',
           buttons: [
             {
@@ -29,7 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // Initial frame state
     return res.status(200).json({
       frame: {
-        version: 'vNext',
+        version: '2',
         image: 'https://snake-frame22.vercel.app/favicon.png',
         buttons: [
           {

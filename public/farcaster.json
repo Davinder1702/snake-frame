@@ -1,21 +1,21 @@
 {
     "frame": {
-      "version": "vNext",
+      "version": "2",
       "name": "Uniframe",
-      "iconUrl": "https://snake-frame22.vercel.app/favicon.png",
-      "homeUrl": "https://snake-frame22.vercel.app/swap",
-      "imageUrl": "https://snake-frame22.vercel.app/favicon.png",
+      "iconUrl": "https://snake-frame14.vercel.app/favicon.png",
+      "homeUrl": "https://snake-frame14.vercel.app/swap",
+      "imageUrl": "https://snake-frame14.vercel.app/favicon.png",
       "buttonTitle": "Check this out",
-      "splashImageUrl": "https://snake-frame22.vercel.app/splash.png",
+      "splashImageUrl": "https://snake-frame14.vercel.app/splash.png",
       "splashBackgroundColor": "#eefcff",
-      "webhookUrl": "https://snake-frame22.vercel.app/api/webhook",
-      "image": "https://snake-frame22.vercel.app/favicon.png",
+      "webhookUrl": "https://snake-frame14.vercel.app/api/webhook",
+      "image": "https://snake-frame12.vercel.app/favicon.png",
       "buttons": [
         {
           "label": "Start Game"
         }
       ],
-      "post_url": "https://snake-frame22.vercel.app/api/webhook",
+      "post_url": "https://snake-frame12.vercel.app/api/webhook",
       "accepts": ["*"]
     }
   }
