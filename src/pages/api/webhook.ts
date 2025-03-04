@@ -13,15 +13,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(200).json({
         frame: {
           version: '2',
-          image: 'https://snake-frame23.vercel.app/favicon.png',
+          image: 'https://snake-frame26.vercel.app/favicon.png',
           buttons: [
             {
               label: 'Playing...',
               action: 'post'
             }
           ],
-          post_url: 'https://snake-frame23.vercel.app/api/webhook',
-          redirect: 'https://snake-frame23.vercel.app'  // Redirect to your game
+          post_url: 'https://snake-frame26.vercel.app/api/webhook',
+          redirect: 'https://snake-frame26.vercel.app'  // Redirect to your game
         }
       });
     }
@@ -30,14 +30,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(200).json({
       frame: {
         version: '2',
-        image: 'https://snake-frame23.vercel.app/favicon.png',
+        image: 'https://snake-frame26.vercel.app/favicon.png',
         buttons: [
           {
             label: 'Start Game',
             action: 'post'
           }
         ],
-        post_url: 'https://snake-frame23.vercel.app/api/webhook'
+        post_url: 'https://snake-frame26.vercel.app/api/webhook'
       }
     });
   } catch (error) {
