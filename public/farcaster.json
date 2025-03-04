@@ -9,12 +9,13 @@
       "splashImageUrl": "https://snake-frame14.vercel.app/splash.png",
       "splashBackgroundColor": "#eefcff",
       "webhookUrl": "https://snake-frame14.vercel.app/api/webhook",
-      "image": "https://snake-frame14.vercel.app/favicon.png",
+      "image": "https://snake-frame15.vercel.app/favicon.png",
       "buttons": [
         {
           "label": "Start Game"
         }
       ],
-      "post_url": "https://snake-frame14.vercel.app/api/webhook"
+      "post_url": "https://snake-frame15.vercel.app/api/webhook",
+      "accepts": ["*"]
     }
   }
