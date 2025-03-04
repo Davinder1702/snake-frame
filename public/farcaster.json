@@ -1,0 +1,13 @@
+{
+    "frame": {
+      "version": 1,
+      "name": "Uniframe",
+      "iconUrl": "https://snake-frame12.vercel.app/favicon.png",
+      "homeUrl": "https://snake-frame12.vercel.app/swap",
+      "imageUrl": "https://snake-frame12.vercel.app/favicon.png",
+      "buttonTitle": "Check this out",
+      "splashImageUrl": "https://snake-frame12.vercel.app/splash.png",
+      "splashBackgroundColor": "#eefcff",
+      "webhookUrl": "https://snake-frame12.vercel.app/api/webhook"
+    }
+  }
